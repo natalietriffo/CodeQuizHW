@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muliple Choice Quiz</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="Timer">Time Left: <span id="Seconds">0</span>
+
+        </div>
+     
+    </nav>
+    <!-- Timer -->
+
+    <!--First Page  -->
+    <div id="Start">
+        <h1>Multiple Choice Quiz</h1>
+        <p>
+            Select one of the four choices for the answer shown above. The quiz is timed. If you do not answer all the
+            questions in the time given, you will be penalized!
+        </p>
+        <button id="StartButton">Begin Quiz</button>
+    </div>
+    <!-- Multiple Choice Questions -->
+    <div id="questions">
+        <!-- Question Headers -->
+        <h2 id="QuestionNameHeaders"></h2>
+        <!-- Options for the Questions -->
+        <div id="options" class="options"></div>
+        <div id="potentialoptions">
+            <div id="option1"></div>
+            <div id="option2"></div>
+            <div id="option3"></div>
+            <div id="option4"></div>
+        </div>
+
+
+    </div>
+    <!-- Answer -->
+    <div id="answer"></div>
+    <button id="nextquestion">Next Question</button>
+    <!-- Adding your Name -->
+    
+    <div id="results" class="Results hide"></div>
+    </div>
+
+    <!-- Highscores -->
+
+    <div id="scores-wrapper">
+        <div id="Lastscreen" class="hide">
+            <h2 id="Congradulations!You are finsihed with the Quiz!"></h2>
+            <h2>Your score is <span id="endingscore">0</span></h2>
+            <h2 id="userName"> Type your Name Here:
+                <input type="text" id="usernameText">
+            </h2>
+            <button id="saveName">Save Name</button>
+            </p>
+        </div>
+        <h1>Highestscores</h1>
+        <ol id="highscores"></ol>
+        <a href="index.html"><button>Restart Game</button></a>
+       
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
